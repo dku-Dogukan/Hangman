@@ -1,0 +1,21 @@
+To create a game , first you need to create a player.
+After creating the game you can start game/games.
+On each game you have six rights to guess the word unless you find some letters.
+
+
+Hangman Game , Postman Instructions;
+
+Post -Create Player  	  localhost:8080/hangman/v1/player ; Body must contain player name and age.
+Post -Start a Game        localhost:8080/hangman/v1/startGame ; Body must contain player name to initiliaze.
+Put  - Make a Guess       localhost:8080/hangman/v1/{Game Id} / {Guess Letter} ; Game Id and the letter should be entered.
+
+
+
+Get  -List All Games      localhost:8080/hangman/v1/listGames ; Lists all exist games on DB.
+Get  -Get a Single Game   localhost:8080/hangman/v1/game/{Game Id} ; Shows the Id entered game's information.
+Get  -List All Players    localhost:8080/hangman/v1/player ; Lists all exist player on DB.
+Get  -Get a Single Player localhost:8080/hangman/v1/player/{Player Id} ; Shows the Id entered player's information.
+
+
+
+Delete  -Delete a game    localhost:8080/hangman/v1/game/{Game Id} ; Delete the Id entered game from DB.
