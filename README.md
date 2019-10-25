@@ -1,1 +1,2 @@
 # hangman
+Server based hangman game , word list can be updated from wordList.txt
